@@ -1,0 +1,15 @@
+h1 {background-color: rgb(255, 255, 255);
+  padding: 25px;
+  color: black;
+  text-align: center;
+
+}
+  .cont-app{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+  }
+  ul
+  {
+   padding: 30px;
+  }
