@@ -65,7 +65,21 @@ function calcularSalario() {
   let salariosemana = salariodiario * 5;
   alert('O salário semanal é de: R$' + salariosemana.toFixed(2))
 }
+function pesodetransporte() {
+let PSB = Number(prompt("qual o peso total do transporte?"));
+let tara = Number(prompt("qual o peso da tara?"));
+
+let pesoLiquido = PSB - tara;
+alert("O peso é: " + pesoLiquido + " kg");
 }
+function Usodecelular() {
+  let n = Number(prompt("Qual o numero de uso de celular?"));
+  let porc =  (0.1/(1+500*n))*100
+
+  alert("A chance de uso de celular é: " + porc.toFixed(2) + "%");
+}
+
+
 
   return (
     <div className="cont-app">
@@ -79,11 +93,11 @@ function calcularSalario() {
              <button onClick={quantidadedelaranjas}>calculo de laranjas</button>
                <button onClick={custosDaIgreja}>custos da igreja</button>
                   <button onClick={calcularSalario}>JUNIN</button>
-
-
+                     <button onClick={pesodetransporte}>transporte</button>
+                        <button onClick={Usodecelular}>celular</button>  
 
       <hr />
     </div>
   )
-
+}
 export default App
