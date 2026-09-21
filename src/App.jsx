@@ -194,6 +194,56 @@ function calcularchurras(){
         alert("Cada pessoa vai pagar R$" + valorI.toFixed(2));
     }
  }
+function caminhoes() {
+    let caminhoes = Number(prompt("Quantos caminhões?"));
+    let jarePorCaminhao = 50;
+    let precoJare = 90;
+    let custoCaminhao = 450;
+
+    let receita = jarePorCaminhao * caminhoes * precoJare;
+    let custo = caminhoes * custoCaminhao;
+    let lucro = receita - custo;
+
+    alert("O lucro total foi: R$ " + lucro);
+}
+function aiaiai() {
+    let caracteres = Number(prompt("Quantos caracteres tem o prompt?"));
+    let custoToken = Number(prompt("Qual o custo de cada token?"));
+
+    let tokens = 5 + caracteres;
+    let custo = tokens * custoToken;
+
+    alert("O prompt vai gastar " + tokens + " tokens.");
+    alert("O prompt vai custar R$ " + custo.toFixed(2));
+}
+function junin() {
+    let horas = Number(prompt("Quantas horas?"));
+
+    let valor = 500 + (horas * 350);
+    let lucro = valor - 500;
+
+    alert("Junin deve cobrar R$ " + valor);
+    alert("O lucro será R$ " + lucro);
+}
+function kawasaki() {
+    let pf = 40;
+    let pj = 33;
+    let tempoPF = 12;
+    let tempoPJ = 42;
+    let valorPF = 2350;
+    let valorPJ = 8900;
+
+    alert(
+        "RELATÓRIO KOWALSKI\n\n" +
+        "Total de relatórios: " + (pf + pj) + "\n" +
+        "Tempo total: " + (tempoPF + tempoPJ) + " horas\n" +
+        "Valor total: R$ " + (valorPF + valorPJ) + "\n\n" +
+        "Média PF: R$ " + (valorPF / pf).toFixed(2) + "\n" +
+        "Média PJ: R$ " + (valorPJ / pj).toFixed(2) + "\n\n" +
+        "Tempo médio PF: " + (tempoPF / pf).toFixed(2) + " horas\n" +
+        "Tempo médio PJ: " + (tempoPJ / pj).toFixed(2) + " horas"
+    );
+}
 
 return (
     <div className="cont-app">
@@ -213,10 +263,14 @@ return (
       <button onClick={Dona}>Judas</button>    
       <button onClick={capitao}>navio</button>
       <button onClick={Sarranosmanos}>shows</button>  
-      <button onClick={mano22}>pespesas do mano</button>
+      <button onClick={mano22}>despesas do mano</button>
       <button onClick={romero}>o romero</button>
       <button onClick={petshop}>os pet </button>
       <button onClick={calcularchurras}></button>
+      <button onClick={caminhoes}>jacarés</button>
+      <button onClick={aiaiai}>ia muito avançada</button>
+      <button onClick={junin}>junior</button>
+      <button onClick={kawasaki}>os pinguinos</button>
       <hr />
     </div>
   )
